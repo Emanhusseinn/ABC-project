@@ -1,10 +1,13 @@
 
 console.log('hiii')
+$(".quiz").hide();
 
 $('#firstBu').click(function(){
-	$("#quiz").css("display", "block")
+	// $(".quiz").css("display", "block")
 	$('body').css("background-color", "yellow")
 	$('#firstDiv').css("display", "none")
+	$(".quiz").show();
+
 })
 
 
@@ -60,15 +63,15 @@ var myquestions = [{
 	// G
 	Q:'Q7- which letter does the word "giraffe" starts with?:',
 	A: 'C3',
-	C: ["1.S","2.RT","3.G"]
+	C: ["1.S","2.R","3.G"]
 
 },
 
 {
 	// H
-	Q:'Q8- which letter does the word "elephants" starts with?:',
+	Q:'Q8- which letter does the word "horn" starts with?:',
 	A: 'C3',
-	C: ["1.F","2.R","3.H"]
+	C: ["1.X","2.I","3.H"]
 
 },
 
@@ -219,34 +222,101 @@ var myquestions = [{
 ]
 
 
-// i was gonna make a for loop to itirate over my array but didn't knew how
+// i was gonna make a for loop to itirate over my array but i didn't knew how :(
 //getting the questions 
 $('#Q1').text(myquestions[0].Q);
 $('#Q2').text(myquestions[1].Q);
 $('#Q3').text(myquestions[2].Q);
 $('#Q4').text(myquestions[3].Q);
-$('#Q1').text(myquestions[4].Q);
-$('#Q1').text(myquestions[5].Q);
-$('#Q1').text(myquestions[6].Q);
-$('#Q1').text(myquestions[7].Q);
-$('#Q1').text(myquestions[8].Q);
-$('#Q1').text(myquestions[9].Q);
-$('#Q1').text(myquestions[10].Q);
-$('#Q1').text(myquestions[11].Q);
-$('#Q1').text(myquestions[12].Q);
-$('#Q1').text(myquestions[13].Q);
-$('#Q1').text(myquestions[14].Q);
-$('#Q1').text(myquestions[15].Q);
-$('#Q1').text(myquestions[16].Q);
-$('#Q1').text(myquestions[17].Q);
-$('#Q1').text(myquestions[18].Q);
-$('#Q1').text(myquestions[19].Q);
-$('#Q1').text(myquestions[20].Q);
-$('#Q1').text(myquestions[21].Q);
-$('#Q1').text(myquestions[22].Q);
-$('#Q1').text(myquestions[23].Q);
-$('#Q1').text(myquestions[24].Q);
-$('#Q1').text(myquestions[25].Q);
-$('#Q1').text(myquestions[26].Q);
+$('#Q5').text(myquestions[4].Q);
+$('#Q6').text(myquestions[5].Q);
+$('#Q7').text(myquestions[6].Q);
+$('#Q8').text(myquestions[7].Q);
+$('#Q9').text(myquestions[8].Q);
+$('#Q10').text(myquestions[9].Q);
+$('#Q11').text(myquestions[10].Q);
+$('#Q12').text(myquestions[11].Q);
+$('#Q13').text(myquestions[12].Q);
+$('#Q14').text(myquestions[13].Q);
+$('#Q15').text(myquestions[14].Q);
+$('#Q16').text(myquestions[15].Q);
+// $('#Q17').text(myquestions[16].Q);
+// $('#Q18').text(myquestions[17].Q);
+// $('#Q19').text(myquestions[18].Q);
+// $('#Q20').text(myquestions[19].Q);
+// $('#Q21').text(myquestions[20].Q);
+// $('#Q22').text(myquestions[21].Q);
+// $('#Q23').text(myquestions[22].Q);
+// $('#Q24').text(myquestions[23].Q);
+// $('#Q25').text(myquestions[24].Q);
+// $('#Q26').text(myquestions[25].Q);
 
+
+//OMG FUNNY YET HURTFUL STORY ,,, 
+// EMAN RAKZEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE 'elle ma y3ref elsager yshweh' a5 ya galby
+
+//getting the choises
+$('#label1').text((myquestions[0].C)[0])
+$('#label2').text((myquestions[0].C)[1])
+$('#label3').text((myquestions[0].C)[2])
+
+$('#label4').text((myquestions[1].C)[0])
+$('#label5').text((myquestions[1].C)[1])
+$('#label6').text((myquestions[1].C)[2])
+
+$('#label7').text((myquestions[2].C)[0])
+$('#label8').text((myquestions[2].C)[1])
+$('#label9').text((myquestions[2].C)[2])
+
+$('#label10').text((myquestions[3].C)[0])
+$('#label11').text((myquestions[3].C)[1])
+$('#label12').text((myquestions[3].C)[2])
+
+$('#label13').text((myquestions[4].C)[0])
+$('#label14').text((myquestions[4].C)[1])
+$('#label15').text((myquestions[4].C)[2])
+
+$('#label16').text((myquestions[5].C)[0])
+$('#label17').text((myquestions[5].C)[1])
+$('#label18').text((myquestions[5].C)[2])
+
+$('#label19').text((myquestions[6].C)[0])
+$('#label20').text((myquestions[6].C)[1])
+$('#label21').text((myquestions[6].C)[2])
+
+$('#label22').text((myquestions[7].C)[0])
+$('#label23').text((myquestions[7].C)[1])
+$('#label24').text((myquestions[7].C)[2])
+
+$('#label25').text((myquestions[8].C)[0])
+$('#label26').text((myquestions[8].C)[1])
+$('#label27').text((myquestions[8].C)[2])
+
+$('#label28').text((myquestions[9].C)[0])
+$('#label29').text((myquestions[9].C)[1])
+$('#label30').text((myquestions[9].C)[2])
+
+$('#label31').text((myquestions[10].C)[0])
+$('#label32').text((myquestions[10].C)[1])
+$('#label33').text((myquestions[10].C)[2])
+
+$('#label34').text((myquestions[11].C)[0])
+$('#label35').text((myquestions[11].C)[1])
+$('#label36').text((myquestions[11].C)[2])
+
+$('#label37').text((myquestions[12].C)[0])
+$('#label38').text((myquestions[12].C)[1])
+$('#label39').text((myquestions[12].C)[2])
+
+$('#label40').text((myquestions[13].C)[0])
+$('#label41').text((myquestions[13].C)[1])
+$('#label42').text((myquestions[13].C)[2])
+
+$('#label43').text((myquestions[14].C)[0])
+$('#label44').text((myquestions[14].C)[1])
+$('#label45').text((myquestions[14].C)[2])
+
+$('#label46').text((myquestions[15].C)[0])
+$('#label47').text((myquestions[15].C)[1])
+$('#label48').text((myquestions[15].C)[2])
 
