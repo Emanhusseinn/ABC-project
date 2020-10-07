@@ -1,9 +1,10 @@
 
 console.log('hiii')
 $(".quiz").hide();
+$("#end").hide();
 
 $('#firstBu').click(function(){
-	// $(".quiz").css("display", "block")
+	$("#end").show();
 	$('body').css("background-color", "yellow")
 	$('#firstDiv').css("display", "none")
 	$(".quiz").show();
@@ -320,3 +321,115 @@ $('#label46').text((myquestions[15].C)[0])
 $('#label47').text((myquestions[15].C)[1])
 $('#label48').text((myquestions[15].C)[2])
 
+
+$('#done').click(function(){
+	//starting counting from 0;
+	var cc = 0
+
+	//storing the users answers
+	var c1 = $('#myForm1').val();
+	var c2 = $('#myForm2').val();
+	var c3 = $('#myForm3').val();
+	var c4 = $('#myForm4').val();
+	var c5 = $('#myForm5').val();
+	var c6 = $('#myForm6').val();
+	var c7 = $('#myForm7').val();
+	var c8 = $('#myForm8').val();
+	var c9 = $('#myForm9').val();
+	var c10 = $('#myForm10').val();
+	var c11 = $('#myForm11').val();
+	var c12 = $('#myForm12').val();
+	var c13 = $('#myForm13').val();
+	var c14 = $('#myForm14').val();
+	var c15 = $('#myForm15').val();
+	var c16 = $('#myForm16').val();
+	var results;
+
+// alert if some of the choices isnt answered
+// if(c1===null && c2===null && c3===null && c4===null && c5===null && c6===null && c7===null && c8===null && c9===null && c10===null && c11===null && c12===null && c13===null && c14===null && c15===null && !c16===null){
+// 	alert('	Oopsie, it seems like you forgot to answer a question, check again!');
+// }
+
+// else{
+	$('.quiz').hide()
+	$('#firstDiv').hide()
+	$('#end').hide()
+// }
+
+	// right answers
+	if (c1 === myquestions[0].A){
+		cc++
+		$('#myForm1.correcting').css('background-color', '#33ff99')
+	}
+	if (c2 === myquestions[1].A){
+		cc++
+		$('#myForm2.correcting').css('background-color', '#33ff99')
+	}
+		if (c3 === myquestions[2].A){
+		cc++
+		$('#myForm3.correcting').css('background-color', '#33ff99')
+	}
+	if (c4 === myquestions[3].A){
+		cc++
+		$('#myForm4.correcting').css('background-color', '#33ff99')
+	}
+		if (c5 === myquestions[4].A){
+		cc++
+		$('#myForm5.correcting').css('background-color', '#33ff99')
+	}
+	if (c6 === myquestions[5].A){
+		cc++
+		$('#myForm6.correcting').css('background-color', '#33ff99')
+	}
+		if (c7 === myquestions[6].A){
+		cc++
+		$('#myForm7.correcting').css('background-color', '#33ff99')
+	}
+	if (c8 === myquestions[7].A){
+		cc++
+		$('#myForm8.correcting').css('background-color', '#33ff99')
+	}
+		if (c9 === myquestions[8].A){
+		cc++
+		$('#myForm9.correcting').css('background-color', '#33ff99')
+	}
+	if (c10 === myquestions[9].A){
+		cc++
+		$('#myForm10.correcting').css('background-color', '#33ff99')
+	}
+		if (c11 === myquestions[10].A){
+		cc++
+		$('#myForm11.correcting').css('background-color', '#33ff99')
+	}
+	if (c12 === myquestions[11].A){
+		cc++
+		$('#myForm12.correcting').css('background-color', '#33ff99')
+	}
+		if (c13 === myquestions[12].A){
+		cc++
+		$('#myForm13.correcting').css('background-color', '#33ff99')
+	}
+	if (c14 === myquestions[13].A){
+		cc++
+		$('#myForm14.correcting').css('background-color', '#33ff99')
+	}
+		if (c15 === myquestions[14].A){
+		cc++
+		$('#myForm15.correcting').css('background-color', '#33ff99')
+	}
+	if (c16 === myquestions[15].A){
+		cc++
+		$('#myForm16.correcting').css('background-color', '#33ff99')
+	}
+	
+results = (cc/16)*100 ;
+if (results === 100 || results >= 85){
+$('#answers').text('your results:' + results + '%, Awsome, You did great.')}
+else if (results < 85 || results >= 70){
+$('#answers').text('your results:' + results + "%, That's very good.")}
+else if (results < 70 || results >= 55){
+$('#answers').text('your results:' + results + "%, That's very good.")}
+else{
+	$('#answers').text('your results:' + results + '%, Hmmm!, you need some practice')
+}
+})
