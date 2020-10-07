@@ -1,0 +1,25 @@
+#firstDiv{
+	margin : auto;
+	border-radius: 8px;
+	border: 9px groove #cccc00;
+	background: #ffffb3;
+	width: 700px;
+	padding: 100px
+	padding-right: 100px;
+	padding-left: 100px;
+	padding-top: 35px;
+	box-shadow: 10px 10px #ffff4d;
+}
+
+body{
+	background-image: url(images/abc3.jpg);
+	background-size: 1600px 800px;
+	margin:auto;
+}
+
+#p1{
+	color: black;
+	font-style: italic;
+	font-size: 35px;
+	text-shadow: 37px yellow;
+}
