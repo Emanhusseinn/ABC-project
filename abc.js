@@ -26,7 +26,6 @@ var myQs = [{Q:"1.which letter does the word 'apple' starts with?:",
 
 
 
-
 $("#mistakes").click(function(){
     $("#quiz").css("display", "block");
 
@@ -38,9 +37,8 @@ $("#mistakes").click(function(){
       $("#form4 .cc").css("display", "block");
       $("#form5 .cc").css("display", "block");
 
-
       $(".correct").css("display", "block");
-      
+     
 
       $("#P1").css("display", "none");
 
@@ -83,7 +81,8 @@ $("#firstBu").click(function(){
        $("#quiz").css("display", "block");
        $("#end").css("display", "block");
        $("#startdiv").css("display", "none");
-       $("body").css("background-image","url(images/yl.png)")
+       $("body").css("background-image","url(images/yal.jpg)")
+
  })
 
 
@@ -96,7 +95,7 @@ $("#finish").click(function resultsCounter(){
       var choice5 = $("#form5 :checked").val();
       var results;
 
-      if(!choice1 || !choice2|| !choice3|| !choice4|| !choice5)
+      if(!choice1||!choice2||!choice3||!choice4||!choice5)
             alert('Oopsie, it seems like you forgot to answer a question, check again!');
       else {  
              $("#quiz").css("display", "none");
