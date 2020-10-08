@@ -1,485 +1,132 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"
-  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-  crossorigin="anonymous"></script>
+  <title>ABC-Q</title>
+  <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="abc.css">
-	<title>ABC</title>
 </head>
 <body>
-<!-- 	made the breakes to put my border in the center of the page
- -->	<br><br><br><br><br><br><br><br><br><br>
-	<div id='firstDiv'>
-		<h1 id="h1"> HEY MONSTER! WANNA TEST YOUR HUGE BRAIN?</h1>
-		<h2> READY TO HAVE SOME FUN? </h2>
-		<button id='firstBu'> LETS GoOoOo!</button>
-	</div>
+  <br><br>
+  <div id="startdiv">
+    <h1>HEY MONSTER! WANNA TEST YOUR HUGE BRAIN? </h1>
+    <h2>READY TO HAVE SOME FUN?</h2><br>
+    <button id="firstBu">LETS GoOoOo!</button> 
+  </div>
 
-	<div class="quiz">
-		<p id="p1"> HEY MONSTER! READY!</p>
- <!-- a -->
-		
-       
-		<form id="myForm1">
+  <div id="quiz">
+        <p id="P1"> HEY MONSTER! READY!:</p>
 
-			  <pre id="Q1"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label1">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label2">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label3">3</label>
-			<br>
-			<p class ="correct" ></p>
-             <p class ="correcting">The answer is : 3.A</p>
-		</form>
+        <form id="form1">
 
+             <pre id="q1">Q</pre>
+             <img src="images/apple.jpg" id="I" width="150" height="150">
+             <br>
+             <input type="radio"  name="test" value="choice1">
+             <label for="choice1" id="labelsId1">1</label><br>
+             <input type="radio" name="test" value="choice2">
+             <label for="choice2" id="labelsId2">2</label><br>
+             <input type="radio" id="choice3" name="test" value="choice3">
+             <label for="choice3" id="labelsId3">3</label><br>
+             <input type="radio" name="test" value="choice4">
+             <label for="choice4" id="labelsId4">4</label><br>
+             <p class ="cc" ></p>
+             <p class ="correct">The answer is : 3.A</p>
+             
+        </form><br>
 
-		<br>
-<!-- b -->
-		<form id="myForm2">
-			 <pre id="Q2"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label4">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label5">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label6">3</label>
-			<br>
-			<p class ="correct" ></p>
-             <p class ="correcting">The answer is : 1.B</p>
-		</form>
+        <form id="form2">
 
-		<br>
-<!-- c -->
-		<form id="myForm3">
-			 <pre id="Q3"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label7">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label8">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label9">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 3.C</p>
-		</form>
+             <pre id="q2">Q</pre>
+             <img src="images/butt.jpg" id="I" width="150" height="150">
+             <br>
+             <input type="radio"  name="test" value="choice1">
+             <label for="choice1" id="labelsId5">1</label><br>
+             <input type="radio"  name="test" value="choice2">
+             <label for="choice2" id="labelsId6">2</label><br>
+             <input type="radio"  name="test" value="choice3">
+             <label for="choice3" id="labelsId7">3</label><br>
+             <input type="radio"  name="test" value="choice4">
+             <label for="choice4" id="labelsId8">4</label><br>
+             <p class ="cc" ></p>
+             <p class ="correct">The answer is : 1.B</p>
+                   
+        </form><br>
 
-		<br>
-<!-- d -->
-		<form id="myForm3">
-		 <pre id="Q4"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label10">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label11">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label12">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 2.D</p>
-		</form>
+        <form id="form3">
 
-		<br>
-<!-- E -->
-		<form id="myForm5">
-			 <pre id="Q5"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label13">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label14">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label15">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 2.E</p>
-		</form>
+              <pre id="q3">Q</pre>
+              <img src="images/corn.png" id="I" width="150" height="150">
+             <br>
+              <input type="radio"  name="test" value="choice1">
+              <label for="choice1" id="labelsId9">1</label><br>
+              <input type="radio"  name="test" value="choice2">
+              <label for="choice2" id="labelsId10">2</label><br>
+              <input type="radio" name="test" value="choice3">
+              <label for="choice3" id="labelsId11">3</label><br>
+              <input type="radio"  name="test" value="choice4">
+              <label for="choice4" id="labelsId12">4</label><br>
+              <p class ="cc" ></p>
+              <p class ="correct">The answer is : 4.C</p>
+                  
+        </form><br>
 
-		<br>
-<!-- f -->
-        <form id="myForm6">
-        	 <pre id="Q6"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label16">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label17">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label18">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 1.F</p>
-		</form>
+        <form id="form4">
 
-		<br>
-<!-- g -->
-		<form id="myForm7">
-			 <pre id="Q7"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label19">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label20">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label21">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 3.G</p>
-		</form>
-<!-- h -->
-		<br>
+             <pre id="q4">Q</pre>
+              <img src="images/don.jpg" id="I" width="150" height="150">
+             <br>
+             <input type="radio"  name="test" value="choice1">
+             <label for="choice1" id="labelsId13">1</label><br>
+             <input type="radio"  name="test" value="choice2">
+             <label for="choice2" id="labelsId14">2</label><br>
+             <input type="radio"  name="test" value="choice3">
+             <label for="choice3" id="labelsId15">3</label><br>
+             <input type="radio" name="test" value="choice4">
+             <label for="choice4" id="labelsId16">4</label><br>
+             <p class ="cc" ></p>
+             <p class ="correct">The answer is : 3.D</p>
+                   
+        </form><br>
 
-		<form id="myForm8">
-			 <pre id="Q8"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="labeL22">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label23">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label24">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 3.H</p>
-		</form>
-<!-- i -->
-		<br>
+        <form id="form5">
 
-		<form id="myForm9">
-			 <pre id="Q9"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label25">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label26">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label27">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 2.I</p>
-		</form>
-<!-- J -->
-		<br>
-
-		<form id="myForm10">
-			 <pre id="Q10"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label28">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label29">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label30">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 2.J</p>
-		</form>
-<!-- k -->
-		<br>
-
-		<form id="myForm11">
-			 <pre id="Q11"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label31">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label32">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label33">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 1.K</p>
-		</form>
-<!-- l -->
-		<br>
-
-		<form id="myForm12">
-			 <pre id="Q12"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label34">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label35">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label36">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 2.L</p>
-		</form>
-
-		<br>
-<!-- m -->
-		<form id="myForm13">
-			 <pre id="Q13"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label37">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label38">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label39">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 1.M</p>
-		</form>
-
-		<br>
-<!-- n -->
-		<form id="myForm14">
-			 <pre id="Q14"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label40">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label41">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label42">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 2.N</p>
-		</form>
-
-		<br>
-<!-- o -->
-		<form id="myForm15">
-			 <pre id="Q15"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label43">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label44">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label45">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">The answer is : 2.O</p>
-		</form>
-
-		<br>
-<!-- p -->
-		<form id="myForm16">
-			 <pre id="Q16"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label46">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label47">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label48">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting"> The answer is :2.P</p>
-		</form>
-
-		<br>
-<!-- q -->
-		<!-- <form id="myForm17">
-			 <pre id="Q17"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label49">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label50">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label51">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 3.Q</p>
-		</form>
-
-		<br> -->
-<!-- r -->
-		<!-- <form id="myForm18">
-			 <pre id="Q18"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label52">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label53">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label54">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 2.R</p>
-		</form>
-
-		<br> -->
-<!-- s -->
-		<!-- <form id="myForm19">
-			 <pre id="Q19"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label55">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label56">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label57">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 1.S</p>
-		</form>
-
-		<br> -->
-<!-- t -->
-		<!-- <form id="myForm20">
-			 <pre id="Q20"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label58">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label59">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label60">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 2.T</p>
-		</form>
-
-		<br> -->
-<!-- u -->
-		<!-- <form id="myForm21">
-			 <pre id="Q21"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label61">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label62">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label63">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 2.U</p>
-		</form>
-
-		<br> -->
-<!-- v -->
-	<!-- 	<form id="myForm22">
-			 <pre id="Q22"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label64">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label65">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label68">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 2.V</p>
-		</form>
-
-		<br> -->
-<!-- w -->
-		<!-- <form id="myForm23">
-			 <pre id="Q23"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label69">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label70">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label71">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 1.W</p>
-		</form>
-
-		<br> -->
-<!-- x -->
-	<!-- 	<form id="myForm24">
-			 <pre id="Q24"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label72">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label73">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label74">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 3.X</p>
-		</form>
-
-		<br> -->
-<!-- y -->
-		<!-- <form id="myForm25">
-			 <pre id="Q25"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label75">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label76">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label77">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 2.Y</p>
-		</form>
-
-		<br> -->
-<!-- z -->
-		<!-- <form id="myForm26">
-			 <pre id="Q26"></pre>
-			<input type="radio" name="first" value="C1">
-			<label for="c1" id="label78">1</label>
-			<br>
-			<input type="radio" name="first" value="C2">
-			<label for="c2" id="label79">2</label>
-			<br>
-			<input type="radio" name="first" value="C3">
-			<label for="c3" id="label80">3</label>
-			<br>
-			<p class ="correct"></p>
-             <p class ="correcting">you were right, the answer is : 1.Z</p>
-		</form>
-
-		<br> -->
+            <pre id="q5">Q</pre>
+            <img src="images/ele.jpg" id="I" width="150" height="150">
+             <br>
+            <input type="radio"  name="test" value="choice1">
+            <label for="choice1" id="labelsId17">a</label><br>
+            <input type="radio"  name="test" value="choice2">
+            <label for="choice2" id="labelsId18">b</label><br>
+            <input type="radio"  name="test" value="choice3">
+            <label for="choice3" id="labelsId19">c</label><br>
+            <input type="radio" name="test" value="choice4">
+            <label for="choice4" id="labelsId20">d</label><br>
+            <p class ="cc" ></p>
+            <p class ="correct">The answer is : 3.E</p>
+                    
+        </form><br> 
 
 
-	</div>
-	<br>
-
-	<div id='end'>
-	<button id="done"> HOORAY! WE'RE DONE!</button> 
-	</div>
-
-	<div>
-		<pre id="answers" ></pre>
-		<p>Hmmm!, you need some practice, what about listining to this <a href="https://www.youtube.com/watch?v=eegWzglBMh0">song</a></p>
-	</div>
 
 
-<script src='abc.js'></script>
+        
+  </div>
+  
+  <div id="end">
+        <button id="finish">HOORAY! WE'RE DONE.</button>
+  </div>
+
+  <pre id="result"></pre><br>
+  <a href="https://www.youtube.com/watch?v=Yo_6xhG-Bcc&list=PLCcteVWYyBtvPcIla99mubpbrNKdPeeJw"  target="_blank"> If you need some practice, what about listining to this SONG</a>
+  <br><br><br>
+  <button id ="mistakes">What went wrong?</button>  
+
+ 
+  <script src="abc.js" ></script>
+
 </body>
 </html>
