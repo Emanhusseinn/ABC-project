@@ -91,13 +91,11 @@ $("#labelsId20").text((myQs[4].S)[3]);
 
 
 $("#finish").click(function resultsCounter(){
-
-
-      var choice1 = $("#form1 :checked").val();
-      var choice2 = $("#form2 :checked").val();
-      var choice3 = $("#form3 :checked").val();
-      var choice4 = $("#form4 :checked").val();
-      var choice5 = $("#form5 :checked").val();
+      var choice1=$("#form1 :checked").val();
+      var choice2=$("#form2 :checked").val();
+      var choice3=$("#form3 :checked").val();
+      var choice4=$("#form4 :checked").val();
+      var choice5=$("#form5 :checked").val();
       //counting an storing my results
       var c = 0;
       var results;
@@ -114,7 +112,7 @@ $("#finish").click(function resultsCounter(){
              //blockeing the result and the mistakes untill the user bress the button
              $("#result").css("display", "block");
              $("#mistakes").css("display", "block");
-        //iterating over my questions
+        //counting results .. it worked at the end
             for (var i = 0; i<5;i++){
                   if ($(`#form${i+1} :checked`).val() === myQs[i].A){
                     c++;
@@ -134,11 +132,9 @@ $("#finish").click(function resultsCounter(){
                   //if they got lesser than 40 they will get the message from element a from the html
                    else{
                   $('#result').text('your results:' + results + '%, Hmmm!, you need some pract');
-                  $('a').css("display", "inline");
-                
-            } 
+                  $('a').css("display", "inline");} 
             // getting choice one corrected answer
-             $("#form1 .cc").text("Your answer is :"+($("#form1 label[for="+choice1+"]").text()));
+             $("#form1 .cc").text("Your answer is :"+($("#form1 label[for="+choice1+"]").text())); 
             // getting choice two corrected answer
              $("#form2 .cc").text("Your answer is :"+($("#form2 label[for="+ choice2+"]").text()));
             // getting choice three corrected answer
